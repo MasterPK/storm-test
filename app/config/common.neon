@@ -1,0 +1,40 @@
+parameters:
+
+
+application:
+	errorPresenter: Error
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+
+
+session:
+	expiration: 14 days
+
+
+di:
+	export:
+		parameters: no
+		tags: no
+
+
+services:
+	router: App\Router\RouterFactory::createRouter
+	db.user: App\Storm\UserRepository
+	db.product: App\Storm\ProductRepository
+
+extensions:
+	storm: \StORM\Bridges\StormDI
+
+storm:
+	debug: true
+	connections:
+		default:
+			host: localhost
+			dbname: storm_test
+			user: petr
+			password: "1234"
+			charset: utf8
+			collate: utf8_czech_ci
+			mutations:
+				'cz': '_cz'
+				'en': ''
