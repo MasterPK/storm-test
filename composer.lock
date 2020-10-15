@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "adf54a7dbc44e30a8a51bea817860d0a",
+    "content-hash": "d1fea96bcd2349e17d885791da170bad",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -559,6 +559,50 @@
             ],
             "description": "⇄ Migrátor je nástroj pro synchronizaci StORM Entit and SQL databáze",
             "time": "2020-10-14T13:29:12+00:00"
+        },
+        {
+            "name": "liquiddesign/pages",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liquiddesign/pages.git",
+                "reference": "de99ec39fd3e27dabd90878d116fe6f6ad517076"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liquiddesign/pages/zipball/de99ec39fd3e27dabd90878d116fe6f6ad517076",
+                "reference": "de99ec39fd3e27dabd90878d116fe6f6ad517076",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pdo": "*",
+                "liquiddesign/storm": "@dev",
+                "nette/application": "~3.0",
+                "nette/caching": "~3.0",
+                "nette/di": "~3.0",
+                "nette/routing": "~3.0",
+                "php": ">=7.4",
+                "tracy/tracy": "*"
+            },
+            "require-dev": {
+                "composer/composer": "*",
+                "liquiddesign/codestyle": "@dev",
+                "nette/tester": "*",
+                "phpstan/phpstan": "*",
+                "tracy/tracy": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Pages\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "℗ Nette extension obsahující databázový router, přesměrování (na StORMu) a přidružené funkce.",
+            "time": "2020-09-20T13:19:27+00:00"
         },
         {
             "name": "liquiddesign/storm",
@@ -3113,7 +3157,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "liquiddesign/storm": 20,
-        "liquiddesign/migrator": 20
+        "liquiddesign/migrator": 20,
+        "liquiddesign/pages": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

@@ -21,10 +21,12 @@ services:
 	router: App\Router\RouterFactory::createRouter
 	db.user: App\Storm\UserRepository
 	db.product: App\Storm\ProductRepository
+	- App\Filters\Filters
 
 extensions:
 	storm: \StORM\Bridges\StormDI
 	migrator: \Migrator\Bridges\MigratorDI
+	pages: \Pages\Bridges\PagesDI
 
 storm:
 	debug: true
@@ -34,11 +36,31 @@ storm:
 			dbname: storm_test
 			user: petr
 			password: "1234"
-			charset: utf8
 			collate: utf8_czech_ci
 			mutations:
 				'cz': '_cz'
 				'en': '_en'
+			primaryKeyGenerator: StORM\DIConnection::generateUuid
 
 migrator:
 	engine: InnoDB
+
+pages:
+	filterIn: [@App\Filters\Filters, 'filterIn']
+	filterOut: [@App\Filters\Filters, 'filterOut']
+	types:
+		index:
+			name: "Úvodní strana"
+			plink: "Web:Index:default"
+			defaultMask: ""
+		productsList:
+			name: "Výpis produktů"
+			plink: "Products:Products:default"
+			defaultMask: "produkty"
+		productDetail:
+			name: "Detail produktu"
+			plink: "Products:Products:detail"
+			defaultMask: "p/<product>"
+	mutations:
+		'cz': 'cz'
+		'en': 'en'

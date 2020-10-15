@@ -21,5 +21,10 @@ class Product extends Entity
 	 */
 	public string $name;
 	
+	/**
+	 * @var int|null
+	 * @column
+	 */
+	public ?int $counter;
 	
 }

@@ -21,7 +21,8 @@
 		"latte/latte": "^2.5",
 		"tracy/tracy": "^2.6",
 		"liquiddesign/storm": "@dev",
-		"liquiddesign/migrator": "@dev"
+		"liquiddesign/migrator": "@dev",
+		"liquiddesign/pages": "@dev"
 	},
 	"require-dev": {
 		"nette/tester": "^2.0",

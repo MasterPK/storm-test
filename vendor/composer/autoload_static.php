@@ -42,6 +42,7 @@ class ComposerStaticInit16447a839bdc205fc18b291d39d56f29
         array (
             'Psr\\Log\\' => 8,
             'Psr\\Container\\' => 14,
+            'Pages\\' => 6,
         ),
         'M' => 
         array (
@@ -137,6 +138,10 @@ class ComposerStaticInit16447a839bdc205fc18b291d39d56f29
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
+        'Pages\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/liquiddesign/pages/src',
         ),
         'Migrator\\' => 
         array (

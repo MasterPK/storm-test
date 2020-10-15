@@ -4,13 +4,12 @@ declare(strict_types=1);
 
 namespace App\Presenters;
 
-use App\Storm\Product;
+use App\Storm\ProductRepository;
 use App\Storm\UserRepository;
-use App\Storm\User;
 use Nette;
+use Pages;
+use Pages\DB\IPageRepository;
 use StORM\DIConnection;
-use StORM\Literal;
-use Tracy\Debugger;
 
 final class HomepagePresenter extends Nette\Application\UI\Presenter
 {
@@ -20,28 +19,24 @@ final class HomepagePresenter extends Nette\Application\UI\Presenter
 	/** @var \App\Storm\UserRepository @inject */
 	public UserRepository $users;
 	
+	/** @var \App\Storm\ProductRepository @inject */
+	public ProductRepository $productRepo;
+	
+	/** @var \Pages\DB\IPageRepository @inject */
+	public IPageRepository $pageRepo;
+	
+	/** @var \Pages\DB\ISitemapRepository @inject */
+	public Pages\DB\ISitemapRepository $siteMapRepo;
+	
+	/** @var Pages\Pages @inject */
+	public Pages\Pages $pages;
+	
 	public function actionDefault()
 	{
-		$this->storm->setMutation("en");
 		
-		/** @var \App\Storm\ProductRepository $products */
-		$products=$this->context->getService("db.product");
+		$this->template->page=$this->pages->getPage();
 		
-		/** @var Product $product */
-		$product=$products->many()->first();
 		
-		Debugger::dump(serialize($product));
-		
-		$users=$this->users->many();
-		
-		//$this->storm->createRow("products",["name_cz"=>"stul","name_en"=>"table"]);
-		
-		$products->createOne(["name"=>["cz"=>"stul","en"=>"table"]]);
-		
-		//$sub = new Literal("SELECT MAX(count) FROM users WHERE name=:name",["name"=>"Petr"]);
-		
-		$subselect = $this->storm->rows(['products'])->setSelect(["MAX(counter)"]);
-		$this->storm->rows(['users'])->where("id", 1)->update(["counter" => $subselect]);
 		
 	}
 }

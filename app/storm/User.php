@@ -24,6 +24,12 @@ class User extends Entity
 	public ?int $counter;
 	
 	/**
+	 * @var int|null
+	 * @column
+	 */
+	public ?int $counter2;
+	
+	/**
 	 * @var int
 	 * @column
 	 */
@@ -40,5 +46,7 @@ class User extends Entity
 	 * @var RelationCollection<\App\Storm\Product>|\App\Storm\Product[]
 	 */
 	public RelationCollection $products;
+	
+	
 	
 }

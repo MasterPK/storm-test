@@ -1,0 +1,5 @@
+Hello products!<br>
+<a href="{plink :Products:Products:default 2}">Filter</a><br>
+{foreach $products as $item}
+	<a href="{plink :Products:Products:detail $item}">{$item->name}</a><br>
+{/foreach}

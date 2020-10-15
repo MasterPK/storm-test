@@ -570,6 +570,52 @@
         "description": "⇄ Migrátor je nástroj pro synchronizaci StORM Entit and SQL databáze"
     },
     {
+        "name": "liquiddesign/pages",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/liquiddesign/pages.git",
+            "reference": "de99ec39fd3e27dabd90878d116fe6f6ad517076"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/liquiddesign/pages/zipball/de99ec39fd3e27dabd90878d116fe6f6ad517076",
+            "reference": "de99ec39fd3e27dabd90878d116fe6f6ad517076",
+            "shasum": ""
+        },
+        "require": {
+            "ext-pdo": "*",
+            "liquiddesign/storm": "@dev",
+            "nette/application": "~3.0",
+            "nette/caching": "~3.0",
+            "nette/di": "~3.0",
+            "nette/routing": "~3.0",
+            "php": ">=7.4",
+            "tracy/tracy": "*"
+        },
+        "require-dev": {
+            "composer/composer": "*",
+            "liquiddesign/codestyle": "@dev",
+            "nette/tester": "*",
+            "phpstan/phpstan": "*",
+            "tracy/tracy": "*"
+        },
+        "time": "2020-09-20T13:19:27+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Pages\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "℗ Nette extension obsahující databázový router, přesměrování (na StORMu) a přidružené funkce."
+    },
+    {
         "name": "liquiddesign/storm",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
