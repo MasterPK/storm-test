@@ -41,4 +41,4 @@ storm:
 				'en': '_en'
 
 migrator:
-	engine: innoDB
+	engine: InnoDB
