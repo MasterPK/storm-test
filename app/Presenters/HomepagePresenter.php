@@ -22,7 +22,7 @@ final class HomepagePresenter extends Nette\Application\UI\Presenter
 	
 	public function actionDefault()
 	{
-		$this->storm->setMutation("cz");
+		$this->storm->setMutation("en");
 		
 		/** @var \App\Storm\ProductRepository $products */
 		$products=$this->context->getService("db.product");
@@ -30,20 +30,15 @@ final class HomepagePresenter extends Nette\Application\UI\Presenter
 		/** @var Product $product */
 		$product=$products->many()->first();
 		
-		//Debugger::dump($product->getValue("name","cz"));
-		//Debugger::dump($product->getValue("name","en"));
+		Debugger::dump(serialize($product));
 		
-		Debugger::dump($product->name);
-		
-		
-		
-		/** @var User[] $users */
 		$users=$this->users->many();
 		
+		//$this->storm->createRow("products",["name_cz"=>"stul","name_en"=>"table"]);
+		
+		$products->createOne(["name"=>["cz"=>"stul","en"=>"table"]]);
 		
 		//$sub = new Literal("SELECT MAX(count) FROM users WHERE name=:name",["name"=>"Petr"]);
-		
-		Debugger::dump($this->users->getUsersWithMoreThanCounter(15)->toArray());
 		
 		$subselect = $this->storm->rows(['products'])->setSelect(["MAX(counter)"]);
 		$this->storm->rows(['users'])->where("id", 1)->update(["counter" => $subselect]);

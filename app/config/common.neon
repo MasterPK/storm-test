@@ -24,6 +24,7 @@ services:
 
 extensions:
 	storm: \StORM\Bridges\StormDI
+	migrator: \Migrator\Bridges\MigratorDI
 
 storm:
 	debug: true
@@ -37,4 +38,7 @@ storm:
 			collate: utf8_czech_ci
 			mutations:
 				'cz': '_cz'
-				'en': ''
+				'en': '_en'
+
+migrator:
+	engine: innoDB
