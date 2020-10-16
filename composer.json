@@ -23,7 +23,8 @@
 		"liquiddesign/storm": "@dev",
 		"liquiddesign/migrator": "@dev",
 		"liquiddesign/pages": "@dev",
-		"liquiddesign/grid": "@dev"
+		"liquiddesign/grid": "@dev",
+		"liquiddesign/forms": "@dev"
 	},
 	"require-dev": {
 		"nette/tester": "^2.0",

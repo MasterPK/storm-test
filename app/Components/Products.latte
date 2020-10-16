@@ -1,13 +1,15 @@
 
 {control filterForm}
-
+{var $dir = $control->getDirection(true)}
 <table border="1" cellspacing="0" cellpadding="0">
 	<tr>
-		<th><a href="{link this order => 'name_'. $lang .'-ASC'}">Název</a></th>
+		<th {if $control->getOrder() == 'name_cz'}style="background-color: antiquewhite;"{/if}><a href="{link this order => 'name_cz-' . $dir}">Name</a></th>
+		<th {if $control->getOrder() == 'counter'}style="background-color: antiquewhite;"{/if}><a href="{link this order => 'counter-' . $dir}">Count</a></th>
 	</tr>
 	{foreach $control->getItemsOnPage() as $item}
 		<tr>
 			<td>{$item->name}</td>
+			<td>{$item->counter}</td>
 		</tr>
 	{/foreach}
 </table>
@@ -19,7 +21,9 @@ Page {$paginator->page} from {$paginator->pageCount}
 
 On page: <a href="{link this, onpage => 2}">2</a> <a href="{link this, onpage => 3}">3</a> <a href="{link this, onpage => 5}">5</a><br>
 
-{var $dir = $control->getDirection(true)}
 
-<th {if $control->getOrder() == 'name_en'}style="background-color: antiquewhite;"{/if}><a href="{link this order => 'name-' . $dir}">Name</a></th>
+
+{control onPageForm}
+{$baseUrl}
+<script src="{$baseUrl}/lqdGrid.js"></script>
 

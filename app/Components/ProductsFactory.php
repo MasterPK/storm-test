@@ -8,7 +8,8 @@ use App\Storm\ProductRepository;
 abstract class ProductsFactory
 {
 	
-	 static public function create(ProductRepository $productRepository, $onPage, $lang){
-		return new Products($productRepository,(int)$onPage,$lang);
+	static public function create(ProductRepository $productRepository, $onPage, $lang, $session)
+	{
+		return new Products($productRepository, (int)$onPage, $lang, $session);
 	}
 }

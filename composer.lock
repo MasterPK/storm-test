@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb056a4d055d8e536ddd4de96688f599",
+    "content-hash": "ea92189a1e77f810e54d119a0f5805f2",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -519,6 +519,51 @@
                 "twig"
             ],
             "time": "2020-09-29T13:32:37+00:00"
+        },
+        {
+            "name": "liquiddesign/forms",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liquiddesign/forms.git",
+                "reference": "4c348217da11cb0b4c8b73d88fb4aaf6fa2ee1e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liquiddesign/forms/zipball/4c348217da11cb0b4c8b73d88fb4aaf6fa2ee1e0",
+                "reference": "4c348217da11cb0b4c8b73d88fb4aaf6fa2ee1e0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pdo": "*",
+                "liquiddesign/storm": "@dev",
+                "nette/application": "~3.0",
+                "nette/component-model": "~3.0",
+                "nette/di": "~3.0",
+                "nette/forms": "~3.0",
+                "nette/utils": "~3.0",
+                "php": ">=7.4",
+                "tracy/tracy": "*"
+            },
+            "require-dev": {
+                "composer/composer": "*",
+                "liquiddesign/codestyle": "@dev",
+                "nette/tester": "*",
+                "phpstan/phpstan": "*",
+                "tracy/tracy": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Forms\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Ⓕ Vícejazyčné formuláře do Nette, doplněné o nové prvky, wysiwyg, antispam kontrolu a prevenci doubleclicku",
+            "time": "2020-10-05T12:10:38+00:00"
         },
         {
             "name": "liquiddesign/grid",
@@ -3204,7 +3249,8 @@
         "liquiddesign/storm": 20,
         "liquiddesign/migrator": 20,
         "liquiddesign/pages": 20,
-        "liquiddesign/grid": 20
+        "liquiddesign/grid": 20,
+        "liquiddesign/forms": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

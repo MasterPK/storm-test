@@ -56,6 +56,10 @@ class ComposerStaticInit16447a839bdc205fc18b291d39d56f29
         array (
             'Grid\\' => 5,
         ),
+        'F' => 
+        array (
+            'Forms\\' => 6,
+        ),
         'C' => 
         array (
             'Composer\\XdebugHandler\\' => 23,
@@ -158,6 +162,10 @@ class ComposerStaticInit16447a839bdc205fc18b291d39d56f29
         'Grid\\' => 
         array (
             0 => __DIR__ . '/..' . '/liquiddesign/grid/src',
+        ),
+        'Forms\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/liquiddesign/forms/src',
         ),
         'Composer\\XdebugHandler\\' => 
         array (

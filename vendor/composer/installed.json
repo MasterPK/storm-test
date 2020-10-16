@@ -528,6 +528,53 @@
         ]
     },
     {
+        "name": "liquiddesign/forms",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/liquiddesign/forms.git",
+            "reference": "4c348217da11cb0b4c8b73d88fb4aaf6fa2ee1e0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/liquiddesign/forms/zipball/4c348217da11cb0b4c8b73d88fb4aaf6fa2ee1e0",
+            "reference": "4c348217da11cb0b4c8b73d88fb4aaf6fa2ee1e0",
+            "shasum": ""
+        },
+        "require": {
+            "ext-pdo": "*",
+            "liquiddesign/storm": "@dev",
+            "nette/application": "~3.0",
+            "nette/component-model": "~3.0",
+            "nette/di": "~3.0",
+            "nette/forms": "~3.0",
+            "nette/utils": "~3.0",
+            "php": ">=7.4",
+            "tracy/tracy": "*"
+        },
+        "require-dev": {
+            "composer/composer": "*",
+            "liquiddesign/codestyle": "@dev",
+            "nette/tester": "*",
+            "phpstan/phpstan": "*",
+            "tracy/tracy": "*"
+        },
+        "time": "2020-10-05T12:10:38+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Forms\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Ⓕ Vícejazyčné formuláře do Nette, doplněné o nové prvky, wysiwyg, antispam kontrolu a prevenci doubleclicku"
+    },
+    {
         "name": "liquiddesign/grid",
         "version": "dev-master",
         "version_normalized": "9999999-dev",

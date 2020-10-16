@@ -44,14 +44,14 @@ final class IndexPresenter extends Presenter
 			"priority" => 0.5,
 		]);*/
 		
-		$sitemap = $this->siteMapRepo->many()->setTake(1)->fetch();
+		/*$sitemap = $this->siteMapRepo->many()->setTake(1)->fetch();
 		
 		$this->pageRepo->createOne([
 			"url" => ["en" => "products-3", "cz" => "produkty-3"],
 			"type" => "productsList",
 			"params" => Helpers::serializeParameters(["onePage"=>3]),
 			"sitemap" => $sitemap->getPK()
-		]);
+		]);*/
 		
 		/*$this->productRepo->createMany(
 			[

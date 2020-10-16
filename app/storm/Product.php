@@ -9,6 +9,11 @@ use StORM\Entity;
  */
 class Product extends Entity
 {
+	/**
+	 * @var string
+	 * @column
+	 */
+	public string $uuid;
 	
 	/**
 	 * @var string
@@ -21,6 +26,12 @@ class Product extends Entity
 	 * @column
 	 */
 	public ?int $counter;
+	
+	/**
+	 * @var bool
+	 * @column
+	 */
+	public bool $hidden;
 	
 	
 }
