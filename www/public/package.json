@@ -1,0 +1,19 @@
+{
+  "name": "storm-test",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "flag-icon-css": "^3.5.0",
+    "flag-icons": "^2.0.0",
+    "flatpickr": "^4.6.6",
+    "nouislider": "^14.6.2",
+    "tail.select": "^0.5.15",
+    "tinymce": "^5.5.1"
+  }
+}

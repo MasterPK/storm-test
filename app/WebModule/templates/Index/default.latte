@@ -1,1 +1,56 @@
+<!DOCTYPE HTML>
+
+
 Hello world!
+
+<link rel="stylesheet" href="{$basePath}/dist/flatpickr.css">
+<link rel="stylesheet" href="{$basePath}/dist/nouislider.css">
+<link rel="stylesheet" href="{$basePath}/dist/tail.select-dark.css">
+<link rel="stylesheet" href="{$basePath}/public/node_modules/flag-icon-css/css/flag-icon.css">
+
+<script src="{$basePath}/dist/flatpickr.js"></script>
+<script src="{$basePath}/dist/nouislider.js"></script>
+<script src="{$basePath}/dist/tail.select-full.js"></script>
+<script src="{$basePath}/dist/tinymce-full.js"></script>
+<script src="{$basePath}/dist/tinymce.js"></script>
+<script src="{$basePath}/dist/lqdForm.js"></script>
+
+{include '../../../../vendor/liquiddesign/forms/src/templates/js.latte'}
+{include '../../../../vendor/liquiddesign/forms/src/templates/css.latte'}
+{do $polyfills = $control['form']->getPolyfills()}
+
+{control form}
+
+
+<script>
+    flatpickr("#frm-date",
+        {$polyfills["flatpickr"]["frm-date"]}
+    );
+
+
+
+    flatpickr("#frm-range",
+        {$polyfills["flatpickr"]["frm-range"]}
+	);
+
+    var range = document.getElementById('frm-posuvnik');
+
+    noUiSlider.create(range, {
+
+        start: [4000],
+        range: {
+            'min': [2000],
+            'max': [10000]
+        },
+        step:1
+
+    });
+
+    tail.select("#frm-dataselect", {
+        multiple: true
+    });
+
+    tinymce.init({
+        selector: '#frm-content'
+    });
+</script>

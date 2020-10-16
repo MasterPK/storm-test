@@ -26,6 +26,7 @@ extensions:
 	storm: \StORM\Bridges\StormDI
 	migrator: \Migrator\Bridges\MigratorDI
 	pages: \Pages\Bridges\PagesDI
+	lqdForms: \Forms\Bridges\FormsDI
 
 storm:
 	debug: true
@@ -61,3 +62,8 @@ pages:
 	mutations:
 		'cz': 'cz'
 		'en': 'en'
+
+lqdForms:
+	mutations:
+		'cz': 'cz'
+		'gb': 'gb'

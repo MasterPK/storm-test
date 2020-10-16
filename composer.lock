@@ -571,12 +571,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/liquiddesign/grid.git",
-                "reference": "95718bd109b376bda3f88478b0a28a45f48e05a7"
+                "reference": "3b3f15a7b6beb563313311ce2f69067bffe026ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liquiddesign/grid/zipball/95718bd109b376bda3f88478b0a28a45f48e05a7",
-                "reference": "95718bd109b376bda3f88478b0a28a45f48e05a7",
+                "url": "https://api.github.com/repos/liquiddesign/grid/zipball/3b3f15a7b6beb563313311ce2f69067bffe026ac",
+                "reference": "3b3f15a7b6beb563313311ce2f69067bffe026ac",
                 "shasum": ""
             },
             "require": {
@@ -608,7 +608,7 @@
                 "MIT"
             ],
             "description": "⊞ Komponenty datalistu, datagridu, stránkování, řazení a filtry",
-            "time": "2020-10-08T13:26:21+00:00"
+            "time": "2020-10-16T12:56:57+00:00"
         },
         {
             "name": "liquiddesign/migrator",
@@ -656,12 +656,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/liquiddesign/pages.git",
-                "reference": "de99ec39fd3e27dabd90878d116fe6f6ad517076"
+                "reference": "f680baff4b51e8f3ca476370b3115b8a170ef35f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liquiddesign/pages/zipball/de99ec39fd3e27dabd90878d116fe6f6ad517076",
-                "reference": "de99ec39fd3e27dabd90878d116fe6f6ad517076",
+                "url": "https://api.github.com/repos/liquiddesign/pages/zipball/f680baff4b51e8f3ca476370b3115b8a170ef35f",
+                "reference": "f680baff4b51e8f3ca476370b3115b8a170ef35f",
                 "shasum": ""
             },
             "require": {
@@ -692,7 +692,7 @@
                 "MIT"
             ],
             "description": "℗ Nette extension obsahující databázový router, přesměrování (na StORMu) a přidružené funkce.",
-            "time": "2020-09-20T13:19:27+00:00"
+            "time": "2020-10-16T12:25:34+00:00"
         },
         {
             "name": "liquiddesign/storm",

@@ -1,2 +1,4 @@
 app/config/local.neon
-vendor/
+vendor/*
+www/public/node_modules/*
+www/dist/

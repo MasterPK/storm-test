@@ -3,7 +3,7 @@
 {var $dir = $control->getDirection(true)}
 <table border="1" cellspacing="0" cellpadding="0">
 	<tr>
-		<th {if $control->getOrder() == 'name_cz'}style="background-color: antiquewhite;"{/if}><a href="{link this order => 'name_cz-' . $dir}">Name</a></th>
+		<th {if $control->getOrder() == 'name'}style="background-color: antiquewhite;"{/if}><a href="{link this order => 'name-' . $dir}">Name</a></th>
 		<th {if $control->getOrder() == 'counter'}style="background-color: antiquewhite;"{/if}><a href="{link this order => 'counter-' . $dir}">Count</a></th>
 	</tr>
 	{foreach $control->getItemsOnPage() as $item}
