@@ -52,6 +52,10 @@ class ComposerStaticInit16447a839bdc205fc18b291d39d56f29
         array (
             'JsonSchema\\' => 11,
         ),
+        'G' => 
+        array (
+            'Grid\\' => 5,
+        ),
         'C' => 
         array (
             'Composer\\XdebugHandler\\' => 23,
@@ -150,6 +154,10 @@ class ComposerStaticInit16447a839bdc205fc18b291d39d56f29
         'JsonSchema\\' => 
         array (
             0 => __DIR__ . '/..' . '/justinrainbow/json-schema/src/JsonSchema',
+        ),
+        'Grid\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/liquiddesign/grid/src',
         ),
         'Composer\\XdebugHandler\\' => 
         array (

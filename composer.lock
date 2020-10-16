@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d1fea96bcd2349e17d885791da170bad",
+    "content-hash": "bb056a4d055d8e536ddd4de96688f599",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -519,6 +519,51 @@
                 "twig"
             ],
             "time": "2020-09-29T13:32:37+00:00"
+        },
+        {
+            "name": "liquiddesign/grid",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liquiddesign/grid.git",
+                "reference": "95718bd109b376bda3f88478b0a28a45f48e05a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liquiddesign/grid/zipball/95718bd109b376bda3f88478b0a28a45f48e05a7",
+                "reference": "95718bd109b376bda3f88478b0a28a45f48e05a7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pdo": "*",
+                "liquiddesign/storm": "@dev",
+                "nette/application": "~3.0",
+                "nette/component-model": "~3.0",
+                "nette/di": "~3.0",
+                "nette/forms": "~3.0",
+                "nette/utils": "~3.0",
+                "php": ">=7.4",
+                "tracy/tracy": "*"
+            },
+            "require-dev": {
+                "composer/composer": "*",
+                "liquiddesign/codestyle": "@dev",
+                "nette/tester": "*",
+                "phpstan/phpstan": "*",
+                "tracy/tracy": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Grid\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "⊞ Komponenty datalistu, datagridu, stránkování, řazení a filtry",
+            "time": "2020-10-08T13:26:21+00:00"
         },
         {
             "name": "liquiddesign/migrator",
@@ -3158,7 +3203,8 @@
     "stability-flags": {
         "liquiddesign/storm": 20,
         "liquiddesign/migrator": 20,
-        "liquiddesign/pages": 20
+        "liquiddesign/pages": 20,
+        "liquiddesign/grid": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

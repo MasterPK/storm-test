@@ -1,0 +1,25 @@
+
+{control filterForm}
+
+<table border="1" cellspacing="0" cellpadding="0">
+	<tr>
+		<th><a href="{link this order => 'name_'. $lang .'-ASC'}">Název</a></th>
+	</tr>
+	{foreach $control->getItemsOnPage() as $item}
+		<tr>
+			<td>{$item->name}</td>
+		</tr>
+	{/foreach}
+</table>
+
+
+<a n:if="!$paginator->isFirst()" href="{link this page=>$paginator->page-1}">Prev</a>
+Page {$paginator->page} from {$paginator->pageCount}
+<a n:if="!$paginator->isLast()" href="{link this page=>$paginator->page+1}">Next</a>
+
+On page: <a href="{link this, onpage => 2}">2</a> <a href="{link this, onpage => 3}">3</a> <a href="{link this, onpage => 5}">5</a><br>
+
+{var $dir = $control->getDirection(true)}
+
+<th {if $control->getOrder() == 'name_en'}style="background-color: antiquewhite;"{/if}><a href="{link this order => 'name-' . $dir}">Name</a></th>
+

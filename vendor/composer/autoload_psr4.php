@@ -27,6 +27,7 @@ return array(
     'Pages\\' => array($vendorDir . '/liquiddesign/pages/src'),
     'Migrator\\' => array($vendorDir . '/liquiddesign/migrator/src'),
     'JsonSchema\\' => array($vendorDir . '/justinrainbow/json-schema/src/JsonSchema'),
+    'Grid\\' => array($vendorDir . '/liquiddesign/grid/src'),
     'Composer\\XdebugHandler\\' => array($vendorDir . '/composer/xdebug-handler/src'),
     'Composer\\Spdx\\' => array($vendorDir . '/composer/spdx-licenses/src'),
     'Composer\\Semver\\' => array($vendorDir . '/composer/semver/src'),

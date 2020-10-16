@@ -21,7 +21,6 @@ services:
 	router: App\Router\RouterFactory::createRouter
 	db.user: App\Storm\UserRepository
 	db.product: App\Storm\ProductRepository
-	- App\Filters\Filters
 
 extensions:
 	storm: \StORM\Bridges\StormDI
@@ -34,8 +33,8 @@ storm:
 		default:
 			host: localhost
 			dbname: storm_test
-			user: petr
-			password: "1234"
+			user: root
+			password: ""
 			collate: utf8_czech_ci
 			mutations:
 				'cz': '_cz'
@@ -46,8 +45,6 @@ migrator:
 	engine: InnoDB
 
 pages:
-	filterIn: [@App\Filters\Filters, 'filterIn']
-	filterOut: [@App\Filters\Filters, 'filterOut']
 	types:
 		index:
 			name: "Úvodní strana"

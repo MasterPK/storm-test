@@ -9,11 +9,6 @@ use StORM\Entity;
  */
 class Product extends Entity
 {
-	/**
-	 * @var int
-	 * @column
-	 */
-	public int $id;
 	
 	/**
 	 * @var string
@@ -26,5 +21,6 @@ class Product extends Entity
 	 * @column
 	 */
 	public ?int $counter;
+	
 	
 }

@@ -47,16 +47,34 @@ final class IndexPresenter extends Presenter
 		$sitemap = $this->siteMapRepo->many()->setTake(1)->fetch();
 		
 		$this->pageRepo->createOne([
-			"url" => ["en" => "product-limit-1", "cz" => "produkt-limit-1"],
-			"type" => "productsDetail",
-			"params" => Helpers::serializeParameters(["product"=>$this->productRepo->getStructure()->getPK()->getName(),"counter"=>1]),
+			"url" => ["en" => "products-3", "cz" => "produkty-3"],
+			"type" => "productsList",
+			"params" => Helpers::serializeParameters(["onePage"=>3]),
 			"sitemap" => $sitemap->getPK()
 		]);
+		
+		/*$this->productRepo->createMany(
+			[
+				[
+					"name" => [
+						"en" => "chair",
+						"cz" => "židle",
+					],
+					"counter" => 10,
+				],
+				[
+					"name" => [
+						"en" => "charger",
+						"cz" => "nabijecka",
+					],
+					"counter" => 2,
+				],
+			]
+		);*/
 		
 		/*foreach ($this->pageRepo->many() as $row){
 			Debugger::dump($row->sitemap);
 		}*/
-		
 		
 		//$this->productRepo->createOne(["name"=>["cz"=>"dvere","en"=>"doors"]]);
 		

@@ -528,6 +528,53 @@
         ]
     },
     {
+        "name": "liquiddesign/grid",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/liquiddesign/grid.git",
+            "reference": "95718bd109b376bda3f88478b0a28a45f48e05a7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/liquiddesign/grid/zipball/95718bd109b376bda3f88478b0a28a45f48e05a7",
+            "reference": "95718bd109b376bda3f88478b0a28a45f48e05a7",
+            "shasum": ""
+        },
+        "require": {
+            "ext-pdo": "*",
+            "liquiddesign/storm": "@dev",
+            "nette/application": "~3.0",
+            "nette/component-model": "~3.0",
+            "nette/di": "~3.0",
+            "nette/forms": "~3.0",
+            "nette/utils": "~3.0",
+            "php": ">=7.4",
+            "tracy/tracy": "*"
+        },
+        "require-dev": {
+            "composer/composer": "*",
+            "liquiddesign/codestyle": "@dev",
+            "nette/tester": "*",
+            "phpstan/phpstan": "*",
+            "tracy/tracy": "*"
+        },
+        "time": "2020-10-08T13:26:21+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Grid\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "⊞ Komponenty datalistu, datagridu, stránkování, řazení a filtry"
+    },
+    {
         "name": "liquiddesign/migrator",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
